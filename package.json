@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-data-structures-arrays-lab#readme",
   "devDependencies": {
+    "eslint-config-defaults": "^9.0.0",
     "learn-browser": "^0.1.13"
   }
 }
