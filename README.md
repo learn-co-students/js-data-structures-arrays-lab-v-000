@@ -1,5 +1,22 @@
 # Arrays Lab
 
+
+// interesting
+
+//slice is NOT destructive ---> also will just return what you are not slicing off, where 2nd arg is how many
+function removeLastDriver () {
+  return drivers.slice(0, drivers.length - 1);
+}
+
+function removeFirstDriver () {
+  return drivers.slice(1);
+}
+
+
+
+
+
+
 ## Objectives
 1. Practice writing arrays
 2. Practice manipulating arrays

@@ -1,30 +1,38 @@
 // Write your solution here!
-const drivers = ["Milo", "Otis", "Garfield"]
+const drivers = ["Milo", "Otis", "Garfield"];
 
 function destructivelyAppendDriver(name) {
-  return drivers.push(name);
-}
+  drivers.push(name);
+  // return drivers;
+};
 
 function destructivelyPrependDriver(name) {
-  return drivers.unshift(name);
-}
+  drivers.unshift(name);
+  // return drivers;
+};
 
 function destructivelyRemoveLastDriver() {
-  return drivers.pop(name);
-}
+  drivers.pop(name);
+};
 
 function destructivelyRemoveFirstDriver() {
-  return drivers.shift(name);
-}
+  drivers.shift(name);
+};
 
-// interesting
+//cleaner
 function appendDriver (name) {
   return [...drivers, name];
-}
+};
+
+// function appendDriver(name) {
+//   const newDrivers = [...drivers];
+//   newDrivers.push(name);
+//   return newDrivers
+// };
 
 function prependDriver(name) {
-  return [name, ...drivers]
-}
+  return [name, ...drivers];
+};
 
 //slice is NOT destructive ---> also will just return what you are not slicing off, where 2nd arg is how many
 function removeLastDriver () {
@@ -32,5 +40,6 @@ function removeLastDriver () {
 }
 
 function removeFirstDriver () {
-  return drivers.slice(1);
+  // return drivers.slice(1, drivers.length);
+  return drivers.slice(1)
 }
