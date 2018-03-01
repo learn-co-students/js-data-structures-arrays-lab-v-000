@@ -39,4 +39,8 @@ function removeFirstDriver() {
   let array = drivers.slice();
   array.shift();
   return array
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b678588c7cf1b071b6019007aa9c61dd539430cd
