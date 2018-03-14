@@ -1,6 +1,7 @@
 // Write your solution here!
 const drivers=["Milo", "Otis", "Garfield"];
 
+//--Destructive
 function destructivelyAppendDriver(name){
   //appends a driver to the end of the drivers array
   drivers.push(name);
@@ -10,7 +11,6 @@ function destructivelyPrependDriver(name){
   //prepends a driver to the beginning of the drivers array
   drivers.unshift(name);
 }
-
 
 function destructivelyRemoveLastDriver() {
   //removes the last driver from the drivers array
@@ -22,11 +22,12 @@ function destructivelyRemoveFirstDriver() {
   drivers.shift();
 }
 
+
+//--NONDESTRUCTIVE
 function appendDriver(name) {
   //appends a driver to the drivers array and returns a new array, leaving the drivers array unchanged
 return  [...drivers, name];
 }
-
 
 function prependDriver(name) {
   //prepends a driver to the drivers array and returns a new array, leaving the drivers array unchanged
