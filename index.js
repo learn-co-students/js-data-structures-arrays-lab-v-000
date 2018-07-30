@@ -19,11 +19,11 @@ function destructivelyRemoveFirstDriver(name) {
 }
 
 function appendDriver(name) {
-  return newDrivers = [...drivers, name]
+  return [...drivers, name]
 }
 
 function prependDriver(name) {
-  return newDrivers = [name, ...drivers]
+  return [name, ...drivers]
 }
 
 function removeLastDriver(name) {
