@@ -2,11 +2,11 @@
 const drivers =["Milo", "Otis", "Garfield"];
 
 function destructivelyAppendDriver(name) {
-  drivers.push("Ralph");
+  drivers.push(name);
 }
 
-function destructivelyPrependDriver() {
-  drivers.unshift("Bob");
+function destructivelyPrependDriver(name) {
+  drivers.unshift(name);
 }
 
 function destructivelyRemoveLastDriver() {
@@ -18,25 +18,17 @@ function destructivelyRemoveFirstDriver() {
 }
 
 function appendDriver(name) {
-  newDrivers=drivers.slice();
-  newDrivers.push(name);
-  return newDrivers;
+  return [...drivers, name]
 }
 
 function prependDriver(name) {
-  newDrivers=drivers.slice()
-  newDrivers.unshift(name);
-  return newDrivers;
+  return [name, ...drivers]
 }
 
 function removeLastDriver() {
-  newDrivers=drivers.slice()
-  newDrivers.pop(name);
-  return newDrivers;
+  return drivers.slice(0, drivers.length-1)
 }
 
 function removeFirstDriver() {
-  newDrivers=drivers.slice()
-  newDrivers.shift(name);
-  return newDrivers;
+  return drivers.slice(1)
 }
