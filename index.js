@@ -26,5 +26,7 @@ let drivers = ["Milo", "Otis", "Garfield"];
  }
 
  function appendDriver(name) {
-     drivers.splice(-1, 0, "Broom");
+     const newDrivers = [...drivers];
+
+     newDrivers;
  }
